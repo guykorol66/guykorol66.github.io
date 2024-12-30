@@ -23,7 +23,7 @@ But in order to do so, we first need to talk about the ways of exchanging keys i
 In the past, it was common to use a symmetric key to encrypt and decrypt messages. which means **both** sides had the same key and could decrypt or encrypt messages with it. but first they need to exchange the key in order to use it.
 The problem of the symmetric key, is that in order to use it, an exchange is needed, so if an attacker used MITM attack and viewd the key, he could encrypt and decrypt messages as well as the users.
 
-In order to solve that, the public and private key system was invented, and using the [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), parties can exchange the public key openly, given that they authenticated against each other prior to it. The authentication issue is solved by the [PKI(Public key infrastructures)](https://en.wikipedia.org/wiki/Public_key_infrastructure), then together we can exchange keys securely and effectively.
+In order to solve that, the public and private key system was invented, and using the [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange), parties can exchange the public key openly, given that they authenticated against each other prior to it. The authentication issue is solved by the [PKI(Public key infrastructures)](https://en.wikipedia.org/wiki/Public_key_infrastructure), then together we can exchange keys securely and effectively. The focus here however, is on a different approach of key exchange, which is based on quantum mechanics.
 
 ## A little physics of light
 Light is composed of photons, which are mass-less energetic particles. photons (as is the light) can be polarized in a specific polarization. we can define bits 0 or 1 as different polarizations of light.
@@ -79,3 +79,5 @@ After completion of the exchange and the bases validation, Alice and Bob publicl
 * The same principals can be used for _true random number generators_
 
 ## Conclusion
+The QKD is a very promising way of key exchange, which gives more information to it's users about possible unwanted listening parties.
+The main shortage is the dependancy on specific hardware in order to do so, which is not as the normal network components deployed worldwide.
